@@ -9,7 +9,7 @@ zadań. Odpowiedzi zapisz w pliku <i>wyniki4.txt</i>. Każdą odpowiedź poprzed
 Do dyspozycji masz plik <i>przyklad.txt</i>, który także zawiera 200 liczb – odpowiedzi dla tego pliku podano w treściach zadań. Możesz sprawdzać na nim działanie swojego programu.
 <br><br>
 <b>Uwaga:</b> Pamiętaj, że Twój program musi ostatecznie działać dla pliku <i>liczby.txt</i>.
-
+<br><br>
 <h4>Zadanie 4.1. (0–4)</h4>
 Podaj, ile jest w pliku <i>liczby.txt</i> takich liczb, których cyfry pierwsza i ostatnia są takie same. Zapisz tę z nich, która występuje w pliku <i>liczby.txt</i> jako pierwsza.<br>
 W pliku z danymi jest co najmniej jedna taka liczba.
@@ -17,7 +17,7 @@ W pliku z danymi jest co najmniej jedna taka liczba.
 Odpowiedź dla danych z pliku <i>przyklad.txt</i>: 26 626
 (26 takich liczb, które mają pierwszą i ostatnią cyfrę taką samą; pierwszą z nich w pliku
 przykładowym jest 626)
-<br>
+<br><br>
 <h4>Zadanie 4.2. (0–4)</h4>
 Znajdź w pliku <i>liczby.txt</i>:
 <ul>
@@ -29,7 +29,7 @@ Znajdź w pliku <i>liczby.txt</i>:
 <br><br>
 Odpowiedź dla danych z pliku <i>przyklad.txt</i>: 144 6 210 4
 (Liczba 144 ma najwięcej czynników pierwszych; liczba czynników pierwszych liczby 144 wynosi 6. Liczba 210 ma najwięcej <u>różnych</u> czynników pierwszych; liczba <u>różnych</u> czynników pierwszych liczby 210 wynosi 4).
-<br>
+<br><br>
 <h4>Zadanie 4.3. (0–4)</h4>
 Trójka (x, y, z) jest dobra, jeśli y jest wielokrotnością x, natomiast z jest wielokrotnością y (czyli x dzieli y, a y dzieli z) oraz x, y, z są różne.
 <br><br>
