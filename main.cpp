@@ -4,8 +4,16 @@
 #include <string>
 #include <vector>
 
+typedef struct 
+{
+    std::vector<int> factors;
+    int matchingNumsCount = 0;
+}Factors;
+
 template <class T>
 void getData(std::vector<T> &vec);
+
+void getFactors(std::vector<Factors> &v_fac, std::vector<int> &vec);
 
 int countFactors(int num, bool countDiff);
 
@@ -29,6 +37,8 @@ void getData(std::vector<T> &vec)
 
     if(!f_data.is_open())
         std::cout << "Couldn't open liczby.txt\n";
+    else
+        std::cout << "File good!\n";
     
     while (f_data.good())
     {
@@ -37,6 +47,23 @@ void getData(std::vector<T> &vec)
         vec.push_back(temp);
     }
     f_data.close();
+}
+
+void getFactors(std::vector<Factors> &v_fac, std::vector<int> &vec)
+{
+    for(int i{0}; i < vec.size(); ++i)
+    {
+        Factors fac;
+        for(int j{2}; j < vec[i]; ++j)
+        {
+            if(vec[i] % j == 0)
+            {
+                fac.factors.push_back(j);
+            }
+        }
+        fac.factors.push_back(vec[i]);
+        v_fac.push_back(fac);
+    }
 }
 
 int countFactors(int num, bool countDiff)
@@ -55,8 +82,6 @@ int countFactors(int num, bool countDiff)
     }
     return factorCount + 1;
 }
-
-
 
 void zad4_1(int &size, int &num)
 {
@@ -104,7 +129,20 @@ void zad4_3(int &triple, int &penta)
 {
     triple = penta = 0;
     std::vector<int> nums;
+    std::vector<Factors> v_fac;
     getData(nums);
+    std::cout << nums.size() << "\n";
+    getFactors(v_fac, nums);
+
+    for(int i{0}; i < v_fac.size(); ++i)
+    {
+        std::cout << i + 1 << ". ";
+        for(int j{0}; j < v_fac[i].factors.size(); ++j)
+        {
+            std::cout << v_fac[i].factors[j] << " "; 
+        }
+        std::cout << "\n";
+    }
 }
 
 void results()
