@@ -5,9 +5,9 @@ W pliku liczby.txt danych jest 200 różnych liczb całkowitych z zakresu [10, 1
 <br><br>
 <b>Napisz program</b> (lub kilka programów), który(-e) znajdzie(-dą) odpowiedzi do poniższych
 zadań. Odpowiedzi zapisz w pliku <i>wyniki4.txt</i>. Każdą odpowiedź poprzedź numerem oznaczającym zadanie.
-<br>
+<br><br>
 Do dyspozycji masz plik <i>przyklad.txt</i>, który także zawiera 200 liczb – odpowiedzi dla tego pliku podano w treściach zadań. Możesz sprawdzać na nim działanie swojego programu.
-
+<br>
 <b>Uwaga:</b> Pamiętaj, że Twój program musi ostatecznie działać dla pliku <i>liczby.txt</i>.
 
 <h4>Zadanie 4.1. (0–4)</h4>
@@ -32,11 +32,11 @@ Odpowiedź dla danych z pliku <i>przyklad.txt</i>: 144 6 210 4
 <br>
 <h4>Zadanie 4.3. (0–4)</h4>
 Trójka (x, y, z) jest dobra, jeśli y jest wielokrotnością x, natomiast z jest wielokrotnością y (czyli x dzieli y, a y dzieli z) oraz x, y, z są różne.
-<br>
+<br><br>
 <b>Przykład:</b> trójka (2, 6, 12) jest dobra, ponieważ 2 dzieli 6, a 6 dzieli 12. Trójka (2, 10, 12) nie jest dobra, ponieważ 10 nie dzieli 12.
 <br><br>
 Analogicznie możemy zdefiniować dobrą piątkę liczb – piątka (u, w, x, y, z) jest dobra, jeśli każda z liczb, poza pierwszą, jest podzielna przez poprzednią liczbę z piątki (u dzieli w, w dzieli x, x dzieli y oraz y dzieli z) oraz wszystkie liczby z piątki są różne.
-
+<br>
 a) Podaj, ile jest dobrych trójek wśród liczb występujących w pliku <i>liczby.txt</i>. Zapisz wszystkie dobre trójki do pliku <i>trojki.txt</i>, każdą w osobnym wierszu.
 
 <b>Uwaga:</b> Liczby z trójki nie muszą występować w pliku <i>liczby.txt</i> w kolejnych
